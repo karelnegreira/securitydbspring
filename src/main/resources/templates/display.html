@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Displaying Page</title>
+</head>
+<body>
+<table>
+<th:block th:each="per : ${agentes}">
+<tr>
+<td th:text = "${per.getId()}"></td>
+<td th:text = "${per.getName()}"></td>
+<td th:text = "${per.getLocation()}"></td>
+</tr>
+</th:block>
+</table>
+</body>
+</html>
